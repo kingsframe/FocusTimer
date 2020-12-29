@@ -7,9 +7,47 @@
 
 import SwiftUI
 
+let defaultTimeRemaining: CGFloat = 2
+
 struct OverheadView: View {
+    
+    @State private var isActive = false
+    @State private var timeRemaining: CGFloat = defaultTimeRemaining
+    
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
     var body: some View {
-        Text("Overhead")
+        VStack {
+            Text("Overhead").padding()
+            
+            let minutes = Int(timeRemaining) / 60 % 60
+            let seconds = Int(timeRemaining) % 60
+            Text("\(String(format:"%02i:%02i", minutes, seconds))").font(.largeTitle)
+            
+            HStack {
+                Button(action: {
+                    isActive.toggle()
+                }, label: {
+                    Text("start")
+                })
+                
+                Button(action: {
+                    isActive = false
+                    timeRemaining = defaultTimeRemaining
+                }, label: {
+                    Text("skip")
+                })
+            }
+        }.onReceive(timer, perform: { _ in
+            guard isActive else { return }
+            if timeRemaining > 0 {
+                timeRemaining -= 1
+            } else {
+                WKInterfaceDevice.current().play(.stop)
+                isActive = false
+                timeRemaining = defaultTimeRemaining
+            }
+        })
     }
 }
 
