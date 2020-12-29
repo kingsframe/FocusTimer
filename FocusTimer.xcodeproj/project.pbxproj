@@ -17,6 +17,7 @@
 		BC8A252A259BCB7300E34C0F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A2529259BCB7300E34C0F /* ComplicationController.swift */; };
 		BC8A252C259BCB7400E34C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8A252B259BCB7400E34C0F /* Assets.xcassets */; };
 		BC8A252F259BCB7400E34C0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8A252E259BCB7400E34C0F /* Preview Assets.xcassets */; };
+		BC8A254B259BD00400E34C0F /* OverheadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A254A259BD00400E34C0F /* OverheadView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		BC8A252E259BCB7400E34C0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC8A2530259BCB7400E34C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC8A2531259BCB7400E34C0F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		BC8A254A259BD00400E34C0F /* OverheadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverheadView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			children = (
 				BC8A2521259BCB7300E34C0F /* FocusTimerApp.swift */,
 				BC8A2523259BCB7300E34C0F /* ContentView.swift */,
+				BC8A254A259BD00400E34C0F /* OverheadView.swift */,
 				BC8A2525259BCB7300E34C0F /* NotificationController.swift */,
 				BC8A2527259BCB7300E34C0F /* NotificationView.swift */,
 				BC8A2529259BCB7300E34C0F /* ComplicationController.swift */,
@@ -271,6 +274,7 @@
 				BC8A2524259BCB7300E34C0F /* ContentView.swift in Sources */,
 				BC8A252A259BCB7300E34C0F /* ComplicationController.swift in Sources */,
 				BC8A2522259BCB7300E34C0F /* FocusTimerApp.swift in Sources */,
+				BC8A254B259BD00400E34C0F /* OverheadView.swift in Sources */,
 				BC8A2528259BCB7300E34C0F /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

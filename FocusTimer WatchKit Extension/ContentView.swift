@@ -9,8 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        
+        VStack {
+            Text("60 min Timebox")
+                .padding()
+            
+            Button(action: {
+                    OverheadView()
+            }, label: {
+                Text("Start")
+            })
+        }
+        
     }
 }
 
