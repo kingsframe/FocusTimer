@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC8A2511259BCB7200E34C0F /* FocusTimer WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BC8A2510259BCB7200E34C0F /* FocusTimer WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BC8A2516259BCB7300E34C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8A2515259BCB7300E34C0F /* Assets.xcassets */; };
+		BC8A251D259BCB7300E34C0F /* FocusTimer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BC8A251C259BCB7300E34C0F /* FocusTimer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BC8A2522259BCB7300E34C0F /* FocusTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A2521259BCB7300E34C0F /* FocusTimerApp.swift */; };
+		BC8A2524259BCB7300E34C0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A2523259BCB7300E34C0F /* ContentView.swift */; };
+		BC8A2526259BCB7300E34C0F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A2525259BCB7300E34C0F /* NotificationController.swift */; };
+		BC8A2528259BCB7300E34C0F /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A2527259BCB7300E34C0F /* NotificationView.swift */; };
+		BC8A252A259BCB7300E34C0F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A2529259BCB7300E34C0F /* ComplicationController.swift */; };
+		BC8A252C259BCB7400E34C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8A252B259BCB7400E34C0F /* Assets.xcassets */; };
+		BC8A252F259BCB7400E34C0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8A252E259BCB7400E34C0F /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC8A2512259BCB7200E34C0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC8A2506259BCB7200E34C0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC8A250F259BCB7200E34C0F;
+			remoteInfo = "FocusTimer WatchKit App";
+		};
+		BC8A251E259BCB7300E34C0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC8A2506259BCB7200E34C0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC8A251B259BCB7300E34C0F;
+			remoteInfo = "FocusTimer WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BC8A2537259BCB7400E34C0F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BC8A251D259BCB7300E34C0F /* FocusTimer WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8A253B259BCB7400E34C0F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BC8A2511259BCB7200E34C0F /* FocusTimer WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BC8A250C259BCB7200E34C0F /* FocusTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8A2510259BCB7200E34C0F /* FocusTimer WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FocusTimer WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8A2515259BCB7300E34C0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC8A2517259BCB7300E34C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC8A251C259BCB7300E34C0F /* FocusTimer WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FocusTimer WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8A2521259BCB7300E34C0F /* FocusTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTimerApp.swift; sourceTree = "<group>"; };
+		BC8A2523259BCB7300E34C0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BC8A2525259BCB7300E34C0F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		BC8A2527259BCB7300E34C0F /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		BC8A2529259BCB7300E34C0F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		BC8A252B259BCB7400E34C0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC8A252E259BCB7400E34C0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BC8A2530259BCB7400E34C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC8A2531259BCB7400E34C0F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC8A2519259BCB7300E34C0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC8A2505259BCB7200E34C0F = {
+			isa = PBXGroup;
+			children = (
+				BC8A2514259BCB7200E34C0F /* FocusTimer WatchKit App */,
+				BC8A2520259BCB7300E34C0F /* FocusTimer WatchKit Extension */,
+				BC8A250D259BCB7200E34C0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC8A250D259BCB7200E34C0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC8A250C259BCB7200E34C0F /* FocusTimer.app */,
+				BC8A2510259BCB7200E34C0F /* FocusTimer WatchKit App.app */,
+				BC8A251C259BCB7300E34C0F /* FocusTimer WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC8A2514259BCB7200E34C0F /* FocusTimer WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				BC8A2515259BCB7300E34C0F /* Assets.xcassets */,
+				BC8A2517259BCB7300E34C0F /* Info.plist */,
+			);
+			path = "FocusTimer WatchKit App";
+			sourceTree = "<group>";
+		};
+		BC8A2520259BCB7300E34C0F /* FocusTimer WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BC8A2521259BCB7300E34C0F /* FocusTimerApp.swift */,
+				BC8A2523259BCB7300E34C0F /* ContentView.swift */,
+				BC8A2525259BCB7300E34C0F /* NotificationController.swift */,
+				BC8A2527259BCB7300E34C0F /* NotificationView.swift */,
+				BC8A2529259BCB7300E34C0F /* ComplicationController.swift */,
+				BC8A252B259BCB7400E34C0F /* Assets.xcassets */,
+				BC8A2530259BCB7400E34C0F /* Info.plist */,
+				BC8A2531259BCB7400E34C0F /* PushNotificationPayload.apns */,
+				BC8A252D259BCB7400E34C0F /* Preview Content */,
+			);
+			path = "FocusTimer WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		BC8A252D259BCB7400E34C0F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BC8A252E259BCB7400E34C0F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC8A250B259BCB7200E34C0F /* FocusTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8A253C259BCB7400E34C0F /* Build configuration list for PBXNativeTarget "FocusTimer" */;
+			buildPhases = (
+				BC8A250A259BCB7200E34C0F /* Resources */,
+				BC8A253B259BCB7400E34C0F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC8A2513259BCB7200E34C0F /* PBXTargetDependency */,
+			);
+			name = FocusTimer;
+			productName = FocusTimer;
+			productReference = BC8A250C259BCB7200E34C0F /* FocusTimer.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		BC8A250F259BCB7200E34C0F /* FocusTimer WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8A2538259BCB7400E34C0F /* Build configuration list for PBXNativeTarget "FocusTimer WatchKit App" */;
+			buildPhases = (
+				BC8A250E259BCB7200E34C0F /* Resources */,
+				BC8A2537259BCB7400E34C0F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC8A251F259BCB7300E34C0F /* PBXTargetDependency */,
+			);
+			name = "FocusTimer WatchKit App";
+			productName = "FocusTimer WatchKit App";
+			productReference = BC8A2510259BCB7200E34C0F /* FocusTimer WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		BC8A251B259BCB7300E34C0F /* FocusTimer WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8A2534259BCB7400E34C0F /* Build configuration list for PBXNativeTarget "FocusTimer WatchKit Extension" */;
+			buildPhases = (
+				BC8A2518259BCB7300E34C0F /* Sources */,
+				BC8A2519259BCB7300E34C0F /* Frameworks */,
+				BC8A251A259BCB7300E34C0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FocusTimer WatchKit Extension";
+			productName = "FocusTimer WatchKit Extension";
+			productReference = BC8A251C259BCB7300E34C0F /* FocusTimer WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC8A2506259BCB7200E34C0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					BC8A250B259BCB7200E34C0F = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					BC8A250F259BCB7200E34C0F = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					BC8A251B259BCB7300E34C0F = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = BC8A2509259BCB7200E34C0F /* Build configuration list for PBXProject "FocusTimer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC8A2505259BCB7200E34C0F;
+			productRefGroup = BC8A250D259BCB7200E34C0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC8A250B259BCB7200E34C0F /* FocusTimer */,
+				BC8A250F259BCB7200E34C0F /* FocusTimer WatchKit App */,
+				BC8A251B259BCB7300E34C0F /* FocusTimer WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC8A250A259BCB7200E34C0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8A250E259BCB7200E34C0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8A2516259BCB7300E34C0F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8A251A259BCB7300E34C0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8A252F259BCB7400E34C0F /* Preview Assets.xcassets in Resources */,
+				BC8A252C259BCB7400E34C0F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC8A2518259BCB7300E34C0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8A2526259BCB7300E34C0F /* NotificationController.swift in Sources */,
+				BC8A2524259BCB7300E34C0F /* ContentView.swift in Sources */,
+				BC8A252A259BCB7300E34C0F /* ComplicationController.swift in Sources */,
+				BC8A2522259BCB7300E34C0F /* FocusTimerApp.swift in Sources */,
+				BC8A2528259BCB7300E34C0F /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC8A2513259BCB7200E34C0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC8A250F259BCB7200E34C0F /* FocusTimer WatchKit App */;
+			targetProxy = BC8A2512259BCB7200E34C0F /* PBXContainerItemProxy */;
+		};
+		BC8A251F259BCB7300E34C0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC8A251B259BCB7300E34C0F /* FocusTimer WatchKit Extension */;
+			targetProxy = BC8A251E259BCB7300E34C0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BC8A2532259BCB7400E34C0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC8A2533259BCB7400E34C0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC8A2535259BCB7400E34C0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FocusTimer WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "FocusTimer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.FocusTimer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		BC8A2536259BCB7400E34C0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FocusTimer WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "FocusTimer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.FocusTimer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		BC8A2539259BCB7400E34C0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = FocusTimer_WatchKit_Extension;
+				INFOPLIST_FILE = "FocusTimer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = abc.FocusTimer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		BC8A253A259BCB7400E34C0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = FocusTimer_WatchKit_Extension;
+				INFOPLIST_FILE = "FocusTimer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = abc.FocusTimer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		BC8A253D259BCB7400E34C0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = abc.FocusTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BC8A253E259BCB7400E34C0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = abc.FocusTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC8A2509259BCB7200E34C0F /* Build configuration list for PBXProject "FocusTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8A2532259BCB7400E34C0F /* Debug */,
+				BC8A2533259BCB7400E34C0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC8A2534259BCB7400E34C0F /* Build configuration list for PBXNativeTarget "FocusTimer WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8A2535259BCB7400E34C0F /* Debug */,
+				BC8A2536259BCB7400E34C0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC8A2538259BCB7400E34C0F /* Build configuration list for PBXNativeTarget "FocusTimer WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8A2539259BCB7400E34C0F /* Debug */,
+				BC8A253A259BCB7400E34C0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC8A253C259BCB7400E34C0F /* Build configuration list for PBXNativeTarget "FocusTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8A253D259BCB7400E34C0F /* Debug */,
+				BC8A253E259BCB7400E34C0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC8A2506259BCB7200E34C0F /* Project object */;
+}
