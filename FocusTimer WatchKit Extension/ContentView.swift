@@ -14,11 +14,11 @@ struct ContentView: View {
             Text("60 min Timebox")
                 .padding()
             
-            Button(action: {
-                    OverheadView()
-            }, label: {
-                Text("Start")
-            })
+            NavigationLink(
+                destination: OverheadView(),
+                label: {
+                    Text("Start")
+                })
         }
         
     }
