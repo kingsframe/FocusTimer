@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let defaultTimeRemaining: CGFloat = 2
+let defaultTimeRemaining: CGFloat = 3
 
 struct OverheadView: View {
     
@@ -28,7 +28,7 @@ struct OverheadView: View {
                 Button(action: {
                     isActive.toggle()
                 }, label: {
-                    Text("start")
+                    Text("\(isActive ? "Pause" : "Play")")
                 })
                 
                 Button(action: {
