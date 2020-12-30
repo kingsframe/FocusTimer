@@ -18,6 +18,7 @@
 		BC8A252C259BCB7400E34C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8A252B259BCB7400E34C0F /* Assets.xcassets */; };
 		BC8A252F259BCB7400E34C0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8A252E259BCB7400E34C0F /* Preview Assets.xcassets */; };
 		BC8A254B259BD00400E34C0F /* OverheadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A254A259BD00400E34C0F /* OverheadView.swift */; };
+		BC8A2558259D281D00E34C0F /* WarmupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A2557259D281D00E34C0F /* WarmupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		BC8A2530259BCB7400E34C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC8A2531259BCB7400E34C0F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		BC8A254A259BD00400E34C0F /* OverheadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverheadView.swift; sourceTree = "<group>"; };
+		BC8A2557259D281D00E34C0F /* WarmupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				BC8A2521259BCB7300E34C0F /* FocusTimerApp.swift */,
 				BC8A2523259BCB7300E34C0F /* ContentView.swift */,
 				BC8A254A259BD00400E34C0F /* OverheadView.swift */,
+				BC8A2557259D281D00E34C0F /* WarmupView.swift */,
 				BC8A2525259BCB7300E34C0F /* NotificationController.swift */,
 				BC8A2527259BCB7300E34C0F /* NotificationView.swift */,
 				BC8A2529259BCB7300E34C0F /* ComplicationController.swift */,
@@ -272,6 +275,7 @@
 			files = (
 				BC8A2526259BCB7300E34C0F /* NotificationController.swift in Sources */,
 				BC8A2524259BCB7300E34C0F /* ContentView.swift in Sources */,
+				BC8A2558259D281D00E34C0F /* WarmupView.swift in Sources */,
 				BC8A252A259BCB7300E34C0F /* ComplicationController.swift in Sources */,
 				BC8A2522259BCB7300E34C0F /* FocusTimerApp.swift in Sources */,
 				BC8A254B259BD00400E34C0F /* OverheadView.swift in Sources */,

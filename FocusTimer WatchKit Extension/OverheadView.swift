@@ -31,12 +31,18 @@ struct OverheadView: View {
                     Text("\(isActive ? "Pause" : "Play")")
                 })
                 
-                Button(action: {
-                    isActive = false
-                    timeRemaining = defaultTimeRemaining
-                }, label: {
-                    Text("skip")
-                })
+//                Button(action: {
+//                    isActive = false
+//                    timeRemaining = defaultTimeRemaining
+//                }, label: {
+//                    Text("skip")
+//                })
+                NavigationLink(
+                    destination: WarmupView(),
+                    label: {
+                        Text("Skip")
+                    })
+                
             }
         }.onReceive(timer, perform: { _ in
             guard isActive else { return }
