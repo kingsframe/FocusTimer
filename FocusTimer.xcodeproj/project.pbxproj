@@ -11,7 +11,7 @@
 		BC8A2516259BCB7300E34C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8A2515259BCB7300E34C0F /* Assets.xcassets */; };
 		BC8A251D259BCB7300E34C0F /* FocusTimer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BC8A251C259BCB7300E34C0F /* FocusTimer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BC8A2522259BCB7300E34C0F /* FocusTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A2521259BCB7300E34C0F /* FocusTimerApp.swift */; };
-		BC8A2524259BCB7300E34C0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A2523259BCB7300E34C0F /* ContentView.swift */; };
+		BC8A2524259BCB7300E34C0F /* StartFocusTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A2523259BCB7300E34C0F /* StartFocusTimerView.swift */; };
 		BC8A2526259BCB7300E34C0F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A2525259BCB7300E34C0F /* NotificationController.swift */; };
 		BC8A2528259BCB7300E34C0F /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A2527259BCB7300E34C0F /* NotificationView.swift */; };
 		BC8A252A259BCB7300E34C0F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A2529259BCB7300E34C0F /* ComplicationController.swift */; };
@@ -19,6 +19,9 @@
 		BC8A252F259BCB7400E34C0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8A252E259BCB7400E34C0F /* Preview Assets.xcassets */; };
 		BC8A254B259BD00400E34C0F /* OverheadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A254A259BD00400E34C0F /* OverheadView.swift */; };
 		BC8A2558259D281D00E34C0F /* WarmupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A2557259D281D00E34C0F /* WarmupView.swift */; };
+		BCBAB9AF259F904B00760A49 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBAB9AE259F904B00760A49 /* ViewRouter.swift */; };
+		BCBAB9B4259F90BB00760A49 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBAB9B3259F90BB00760A49 /* Page.swift */; };
+		BCBAB9B9259F912F00760A49 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBAB9B8259F912F00760A49 /* MotherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +73,7 @@
 		BC8A2517259BCB7300E34C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC8A251C259BCB7300E34C0F /* FocusTimer WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FocusTimer WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8A2521259BCB7300E34C0F /* FocusTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTimerApp.swift; sourceTree = "<group>"; };
-		BC8A2523259BCB7300E34C0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BC8A2523259BCB7300E34C0F /* StartFocusTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartFocusTimerView.swift; sourceTree = "<group>"; };
 		BC8A2525259BCB7300E34C0F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		BC8A2527259BCB7300E34C0F /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		BC8A2529259BCB7300E34C0F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
@@ -80,6 +83,9 @@
 		BC8A2531259BCB7400E34C0F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		BC8A254A259BD00400E34C0F /* OverheadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverheadView.swift; sourceTree = "<group>"; };
 		BC8A2557259D281D00E34C0F /* WarmupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmupView.swift; sourceTree = "<group>"; };
+		BCBAB9AE259F904B00760A49 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		BCBAB9B3259F90BB00760A49 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		BCBAB9B8259F912F00760A49 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +131,10 @@
 			isa = PBXGroup;
 			children = (
 				BC8A2521259BCB7300E34C0F /* FocusTimerApp.swift */,
-				BC8A2523259BCB7300E34C0F /* ContentView.swift */,
+				BCBAB9B8259F912F00760A49 /* MotherView.swift */,
+				BCBAB9AE259F904B00760A49 /* ViewRouter.swift */,
+				BCBAB9B3259F90BB00760A49 /* Page.swift */,
+				BC8A2523259BCB7300E34C0F /* StartFocusTimerView.swift */,
 				BC8A254A259BD00400E34C0F /* OverheadView.swift */,
 				BC8A2557259D281D00E34C0F /* WarmupView.swift */,
 				BC8A2525259BCB7300E34C0F /* NotificationController.swift */,
@@ -274,12 +283,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC8A2526259BCB7300E34C0F /* NotificationController.swift in Sources */,
-				BC8A2524259BCB7300E34C0F /* ContentView.swift in Sources */,
+				BC8A2524259BCB7300E34C0F /* StartFocusTimerView.swift in Sources */,
 				BC8A2558259D281D00E34C0F /* WarmupView.swift in Sources */,
 				BC8A252A259BCB7300E34C0F /* ComplicationController.swift in Sources */,
 				BC8A2522259BCB7300E34C0F /* FocusTimerApp.swift in Sources */,
+				BCBAB9B4259F90BB00760A49 /* Page.swift in Sources */,
 				BC8A254B259BD00400E34C0F /* OverheadView.swift in Sources */,
 				BC8A2528259BCB7300E34C0F /* NotificationView.swift in Sources */,
+				BCBAB9AF259F904B00760A49 /* ViewRouter.swift in Sources */,
+				BCBAB9B9259F912F00760A49 /* MotherView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

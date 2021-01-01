@@ -9,10 +9,13 @@ import SwiftUI
 
 @main
 struct FocusTimerApp: App {
+    
+    @StateObject var viewRouter = ViewRouter()
+    
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                MotherView().environmentObject(viewRouter)
             }
         }
 

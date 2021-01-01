@@ -11,6 +11,7 @@ let defaultTimeRemaining: CGFloat = 3
 
 struct OverheadView: View {
     
+    @EnvironmentObject var viewRouter: ViewRouter
     @State private var isActive = false
     @State private var timeRemaining: CGFloat = defaultTimeRemaining
     
@@ -31,18 +32,13 @@ struct OverheadView: View {
                     Text("\(isActive ? "Pause" : "Play")")
                 })
                 
-//                Button(action: {
-//                    isActive = false
-//                    timeRemaining = defaultTimeRemaining
-//                }, label: {
-//                    Text("skip")
-//                })
-                NavigationLink(
-                    destination: WarmupView(),
-                    label: {
-                        Text("Skip")
-                    })
-                
+                Button(action: {
+                    isActive = false
+                    timeRemaining = defaultTimeRemaining
+                    viewRouter.currentPage = .warmup
+                }, label: {
+                    Text("skip")
+                })
             }
         }.onReceive(timer, perform: { _ in
             guard isActive else { return }
@@ -59,6 +55,6 @@ struct OverheadView: View {
 
 struct OverheadView_Previews: PreviewProvider {
     static var previews: some View {
-        OverheadView()
+        OverheadView().environmentObject(ViewRouter())
     }
 }
