@@ -7,19 +7,19 @@
 
 import SwiftUI
 
-let defaultTimeRemaining: CGFloat = 3
+let overheadTime: CGFloat = 3
 
 struct OverheadView: View {
     
     @EnvironmentObject var viewRouter: ViewRouter
     @State private var isActive = false
-    @State private var timeRemaining: CGFloat = defaultTimeRemaining
+    @State private var timeRemaining: CGFloat = overheadTime
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     func stopTimerAndGoToWarmupPage() {
         isActive = false
-        timeRemaining = defaultTimeRemaining
+        timeRemaining = overheadTime
         viewRouter.currentPage = .warmup
     }
     

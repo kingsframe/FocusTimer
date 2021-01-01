@@ -7,14 +7,56 @@
 
 import SwiftUI
 
+let warmupTime: CGFloat = 3
+
 struct WarmupView: View {
+    @EnvironmentObject var viewRouter: ViewRouter
+    @State private var isActive = false
+    @State private var timeRemaining: CGFloat = warmupTime
+    
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
+    func stopTimerAndGoToCooldownPage() {
+        isActive = false
+        timeRemaining = warmupTime
+        viewRouter.currentPage = .startFocusTimer
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Warmup").padding()
+            
+            let minutes = Int(timeRemaining) / 60 % 60
+            let seconds = Int(timeRemaining) % 60
+            Text("\(String(format:"%02i:%02i", minutes, seconds))").font(.largeTitle)
+            
+            HStack {
+                Button(action: {
+                    isActive.toggle()
+                }, label: {
+                    Text("\(isActive ? "Pause" : "Play")")
+                })
+                
+                Button(action: {
+                    stopTimerAndGoToCooldownPage()
+                }, label: {
+                    Text("skip")
+                })
+            }
+        }.onReceive(timer, perform: { _ in
+            guard isActive else { return }
+            if timeRemaining > 0 {
+                timeRemaining -= 1
+            } else {
+                WKInterfaceDevice.current().play(.stop)
+                stopTimerAndGoToCooldownPage()
+            }
+        })
     }
 }
 
 struct WarmupView_Previews: PreviewProvider {
     static var previews: some View {
-        WarmupView()
+        WarmupView().environmentObject(ViewRouter())
     }
 }
