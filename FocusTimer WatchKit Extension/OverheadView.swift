@@ -17,6 +17,12 @@ struct OverheadView: View {
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
+    func stopTimerAndGoToWarmupPage() {
+        isActive = false
+        timeRemaining = defaultTimeRemaining
+        viewRouter.currentPage = .warmup
+    }
+    
     var body: some View {
         VStack {
             Text("Overhead").padding()
@@ -33,9 +39,7 @@ struct OverheadView: View {
                 })
                 
                 Button(action: {
-                    isActive = false
-                    timeRemaining = defaultTimeRemaining
-                    viewRouter.currentPage = .warmup
+                    stopTimerAndGoToWarmupPage()
                 }, label: {
                     Text("skip")
                 })
@@ -46,8 +50,7 @@ struct OverheadView: View {
                 timeRemaining -= 1
             } else {
                 WKInterfaceDevice.current().play(.stop)
-                isActive = false
-                timeRemaining = defaultTimeRemaining
+                stopTimerAndGoToWarmupPage()
             }
         })
     }
