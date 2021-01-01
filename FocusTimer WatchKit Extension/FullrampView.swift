@@ -1,30 +1,30 @@
 //
-//  WarmupView.swift
+//  FullrampView.swift
 //  FocusTimer WatchKit Extension
 //
-//  Created by kaiwen zhang on 12/30/20.
+//  Created by kaiwen zhang on 1/1/21.
 //
 
 import SwiftUI
 
-let warmupTime: CGFloat = 3
+let fullrampTime: CGFloat = 3
 
-struct WarmupView: View {
+struct FullrampView: View {
     @EnvironmentObject var viewRouter: ViewRouter
     @State private var isActive = false
-    @State private var timeRemaining: CGFloat = warmupTime
+    @State private var timeRemaining: CGFloat = fullrampTime
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
-    func stopTimerAndGoToCooldownPage() {
+    func stopTimerAndGoToOverdrivePage() {
         isActive = false
-        timeRemaining = warmupTime
-        viewRouter.currentPage = .cooldown
+        timeRemaining = fullrampTime
+        viewRouter.currentPage = .overdrive
     }
     
     var body: some View {
         VStack {
-            Text("Warmup").padding()
+            Text("Fullramp").padding()
             
             let minutes = Int(timeRemaining) / 60 % 60
             let seconds = Int(timeRemaining) % 60
@@ -38,7 +38,7 @@ struct WarmupView: View {
                 })
                 
                 Button(action: {
-                    stopTimerAndGoToCooldownPage()
+                    stopTimerAndGoToOverdrivePage()
                 }, label: {
                     Text("skip")
                 })
@@ -49,14 +49,14 @@ struct WarmupView: View {
                 timeRemaining -= 1
             } else {
                 WKInterfaceDevice.current().play(.stop)
-                stopTimerAndGoToCooldownPage()
+                stopTimerAndGoToOverdrivePage()
             }
         })
     }
 }
 
-struct WarmupView_Previews: PreviewProvider {
+struct FullrampView_Previews: PreviewProvider {
     static var previews: some View {
-        WarmupView().environmentObject(ViewRouter())
+        FullrampView().environmentObject(ViewRouter())
     }
 }

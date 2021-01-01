@@ -22,6 +22,9 @@
 		BCBAB9AF259F904B00760A49 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBAB9AE259F904B00760A49 /* ViewRouter.swift */; };
 		BCBAB9B4259F90BB00760A49 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBAB9B3259F90BB00760A49 /* Page.swift */; };
 		BCBAB9B9259F912F00760A49 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBAB9B8259F912F00760A49 /* MotherView.swift */; };
+		BCBAB9C1259FA30500760A49 /* CooldownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBAB9C0259FA30500760A49 /* CooldownView.swift */; };
+		BCBAB9C6259FA38800760A49 /* FullrampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBAB9C5259FA38800760A49 /* FullrampView.swift */; };
+		BCBAB9CB259FA39600760A49 /* OverdriveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBAB9CA259FA39600760A49 /* OverdriveView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,9 @@
 		BCBAB9AE259F904B00760A49 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		BCBAB9B3259F90BB00760A49 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		BCBAB9B8259F912F00760A49 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
+		BCBAB9C0259FA30500760A49 /* CooldownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CooldownView.swift; sourceTree = "<group>"; };
+		BCBAB9C5259FA38800760A49 /* FullrampView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullrampView.swift; sourceTree = "<group>"; };
+		BCBAB9CA259FA39600760A49 /* OverdriveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverdriveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,10 +138,13 @@
 			children = (
 				BC8A2521259BCB7300E34C0F /* FocusTimerApp.swift */,
 				BCBAB9B8259F912F00760A49 /* MotherView.swift */,
+				BCBAB9C5259FA38800760A49 /* FullrampView.swift */,
+				BCBAB9CA259FA39600760A49 /* OverdriveView.swift */,
 				BCBAB9AE259F904B00760A49 /* ViewRouter.swift */,
 				BCBAB9B3259F90BB00760A49 /* Page.swift */,
 				BC8A2523259BCB7300E34C0F /* StartFocusTimerView.swift */,
 				BC8A254A259BD00400E34C0F /* OverheadView.swift */,
+				BCBAB9C0259FA30500760A49 /* CooldownView.swift */,
 				BC8A2557259D281D00E34C0F /* WarmupView.swift */,
 				BC8A2525259BCB7300E34C0F /* NotificationController.swift */,
 				BC8A2527259BCB7300E34C0F /* NotificationView.swift */,
@@ -286,12 +295,15 @@
 				BC8A2524259BCB7300E34C0F /* StartFocusTimerView.swift in Sources */,
 				BC8A2558259D281D00E34C0F /* WarmupView.swift in Sources */,
 				BC8A252A259BCB7300E34C0F /* ComplicationController.swift in Sources */,
+				BCBAB9CB259FA39600760A49 /* OverdriveView.swift in Sources */,
 				BC8A2522259BCB7300E34C0F /* FocusTimerApp.swift in Sources */,
 				BCBAB9B4259F90BB00760A49 /* Page.swift in Sources */,
 				BC8A254B259BD00400E34C0F /* OverheadView.swift in Sources */,
 				BC8A2528259BCB7300E34C0F /* NotificationView.swift in Sources */,
 				BCBAB9AF259F904B00760A49 /* ViewRouter.swift in Sources */,
 				BCBAB9B9259F912F00760A49 /* MotherView.swift in Sources */,
+				BCBAB9C1259FA30500760A49 /* CooldownView.swift in Sources */,
+				BCBAB9C6259FA38800760A49 /* FullrampView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

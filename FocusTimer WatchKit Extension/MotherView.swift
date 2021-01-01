@@ -19,7 +19,12 @@ struct MotherView: View {
             OverheadView()
         case .warmup:
             WarmupView()
-        
+        case .cooldown:
+            CooldownView()
+        case .fullramp:
+            FullrampView()
+        case .overdrive:
+            OverdriveView()
         }
     }
 }

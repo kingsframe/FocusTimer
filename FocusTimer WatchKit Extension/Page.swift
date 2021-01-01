@@ -11,4 +11,7 @@ enum Page {
     case startFocusTimer
     case overhead
     case warmup
+    case cooldown
+    case fullramp
+    case overdrive
 }

@@ -1,30 +1,30 @@
 //
-//  WarmupView.swift
+//  CooldownView.swift
 //  FocusTimer WatchKit Extension
 //
-//  Created by kaiwen zhang on 12/30/20.
+//  Created by kaiwen zhang on 1/1/21.
 //
 
 import SwiftUI
 
-let warmupTime: CGFloat = 3
+let cooldownTime: CGFloat = 3
 
-struct WarmupView: View {
+struct CooldownView: View {
     @EnvironmentObject var viewRouter: ViewRouter
     @State private var isActive = false
-    @State private var timeRemaining: CGFloat = warmupTime
+    @State private var timeRemaining: CGFloat = cooldownTime
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
-    func stopTimerAndGoToCooldownPage() {
+    func stopTimerAndGoToFullrampPage() {
         isActive = false
-        timeRemaining = warmupTime
-        viewRouter.currentPage = .cooldown
+        timeRemaining = cooldownTime
+        viewRouter.currentPage = .fullramp
     }
     
     var body: some View {
         VStack {
-            Text("Warmup").padding()
+            Text("Cooldown").padding()
             
             let minutes = Int(timeRemaining) / 60 % 60
             let seconds = Int(timeRemaining) % 60
@@ -38,7 +38,7 @@ struct WarmupView: View {
                 })
                 
                 Button(action: {
-                    stopTimerAndGoToCooldownPage()
+                    stopTimerAndGoToFullrampPage()
                 }, label: {
                     Text("skip")
                 })
@@ -49,14 +49,14 @@ struct WarmupView: View {
                 timeRemaining -= 1
             } else {
                 WKInterfaceDevice.current().play(.stop)
-                stopTimerAndGoToCooldownPage()
+                stopTimerAndGoToFullrampPage()
             }
         })
     }
 }
 
-struct WarmupView_Previews: PreviewProvider {
+struct CooldownView_Previews: PreviewProvider {
     static var previews: some View {
-        WarmupView().environmentObject(ViewRouter())
+        CooldownView().environmentObject(ViewRouter())
     }
 }

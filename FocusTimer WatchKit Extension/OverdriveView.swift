@@ -1,30 +1,30 @@
 //
-//  WarmupView.swift
+//  OverdriveView.swift
 //  FocusTimer WatchKit Extension
 //
-//  Created by kaiwen zhang on 12/30/20.
+//  Created by kaiwen zhang on 1/1/21.
 //
 
 import SwiftUI
 
-let warmupTime: CGFloat = 3
+let overdriveTime: CGFloat = 3
 
-struct WarmupView: View {
+struct OverdriveView: View {
     @EnvironmentObject var viewRouter: ViewRouter
     @State private var isActive = false
-    @State private var timeRemaining: CGFloat = warmupTime
+    @State private var timeRemaining: CGFloat = overdriveTime
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
-    func stopTimerAndGoToCooldownPage() {
+    func stopTimerAndGoToStartFocusTimerPage() {
         isActive = false
-        timeRemaining = warmupTime
-        viewRouter.currentPage = .cooldown
+        timeRemaining = overdriveTime
+        viewRouter.currentPage = .startFocusTimer
     }
     
     var body: some View {
         VStack {
-            Text("Warmup").padding()
+            Text("Overclock").padding()
             
             let minutes = Int(timeRemaining) / 60 % 60
             let seconds = Int(timeRemaining) % 60
@@ -38,7 +38,7 @@ struct WarmupView: View {
                 })
                 
                 Button(action: {
-                    stopTimerAndGoToCooldownPage()
+                    stopTimerAndGoToStartFocusTimerPage()
                 }, label: {
                     Text("skip")
                 })
@@ -49,14 +49,14 @@ struct WarmupView: View {
                 timeRemaining -= 1
             } else {
                 WKInterfaceDevice.current().play(.stop)
-                stopTimerAndGoToCooldownPage()
+                stopTimerAndGoToStartFocusTimerPage()
             }
         })
     }
 }
 
-struct WarmupView_Previews: PreviewProvider {
+struct OverdriveView_Previews: PreviewProvider {
     static var previews: some View {
-        WarmupView().environmentObject(ViewRouter())
+        OverdriveView().environmentObject(ViewRouter())
     }
 }
