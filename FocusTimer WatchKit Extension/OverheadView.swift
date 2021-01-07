@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let overheadTime: CGFloat = 3
+let overheadTime: CGFloat = 3*60
 
 struct OverheadView: View {
     

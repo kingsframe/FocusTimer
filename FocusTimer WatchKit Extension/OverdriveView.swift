@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let overdriveTime: CGFloat = 3
+let overdriveTime: CGFloat = 10*60
 
 struct OverdriveView: View {
     @EnvironmentObject var viewRouter: ViewRouter

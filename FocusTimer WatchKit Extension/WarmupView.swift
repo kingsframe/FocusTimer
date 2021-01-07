@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let warmupTime: CGFloat = 3
+let warmupTime: CGFloat = 20*60
 
 struct WarmupView: View {
     @EnvironmentObject var viewRouter: ViewRouter

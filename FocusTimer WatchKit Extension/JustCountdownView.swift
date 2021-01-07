@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let justCountdownTime: CGFloat = 3600
+let justCountdownTime: CGFloat = 60*60
 
 struct JustCountdownView: View {
     @EnvironmentObject var viewRouter: ViewRouter

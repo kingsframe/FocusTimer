@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let cooldownTime: CGFloat = 3
+let cooldownTime: CGFloat = 7*60
 
 struct CooldownView: View {
     @EnvironmentObject var viewRouter: ViewRouter

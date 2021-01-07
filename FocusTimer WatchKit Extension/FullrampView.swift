@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let fullrampTime: CGFloat = 3
+let fullrampTime: CGFloat = 20*60
 
 struct FullrampView: View {
     @EnvironmentObject var viewRouter: ViewRouter
