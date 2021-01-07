@@ -25,6 +25,8 @@ struct MotherView: View {
             FullrampView()
         case .overdrive:
             OverdriveView()
+        case .justCountdown:
+            JustCountdownView()
         }
     }
 }

@@ -20,7 +20,12 @@ struct StartFocusTimerView: View {
             Button(action: {
                 viewRouter.currentPage = .overhead
             }, label: {
-                Text("Start")
+                Text("Start Focus")
+            })
+            Button(action: {
+                viewRouter.currentPage = .justCountdown
+            }, label: {
+                Text("Just Countdown")
             })
         }
         

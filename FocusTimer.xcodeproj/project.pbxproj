@@ -25,6 +25,7 @@
 		BCBAB9C1259FA30500760A49 /* CooldownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBAB9C0259FA30500760A49 /* CooldownView.swift */; };
 		BCBAB9C6259FA38800760A49 /* FullrampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBAB9C5259FA38800760A49 /* FullrampView.swift */; };
 		BCBAB9CB259FA39600760A49 /* OverdriveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBAB9CA259FA39600760A49 /* OverdriveView.swift */; };
+		BCBAB9D025A78D9C00760A49 /* JustCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBAB9CF25A78D9C00760A49 /* JustCountdownView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		BCBAB9C0259FA30500760A49 /* CooldownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CooldownView.swift; sourceTree = "<group>"; };
 		BCBAB9C5259FA38800760A49 /* FullrampView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullrampView.swift; sourceTree = "<group>"; };
 		BCBAB9CA259FA39600760A49 /* OverdriveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverdriveView.swift; sourceTree = "<group>"; };
+		BCBAB9CF25A78D9C00760A49 /* JustCountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustCountdownView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			children = (
 				BC8A2521259BCB7300E34C0F /* FocusTimerApp.swift */,
 				BCBAB9B8259F912F00760A49 /* MotherView.swift */,
+				BCBAB9CF25A78D9C00760A49 /* JustCountdownView.swift */,
 				BCBAB9C5259FA38800760A49 /* FullrampView.swift */,
 				BCBAB9CA259FA39600760A49 /* OverdriveView.swift */,
 				BCBAB9AE259F904B00760A49 /* ViewRouter.swift */,
@@ -303,6 +306,7 @@
 				BCBAB9AF259F904B00760A49 /* ViewRouter.swift in Sources */,
 				BCBAB9B9259F912F00760A49 /* MotherView.swift in Sources */,
 				BCBAB9C1259FA30500760A49 /* CooldownView.swift in Sources */,
+				BCBAB9D025A78D9C00760A49 /* JustCountdownView.swift in Sources */,
 				BCBAB9C6259FA38800760A49 /* FullrampView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

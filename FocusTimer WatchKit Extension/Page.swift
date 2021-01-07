@@ -14,4 +14,5 @@ enum Page {
     case cooldown
     case fullramp
     case overdrive
+    case justCountdown
 }

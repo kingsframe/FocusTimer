@@ -1,30 +1,30 @@
 //
-//  OverdriveView.swift
+//  JustCountdownView.swift
 //  FocusTimer WatchKit Extension
 //
-//  Created by kaiwen zhang on 1/1/21.
+//  Created by kaiwen zhang on 1/7/21.
 //
 
 import SwiftUI
 
-let overdriveTime: CGFloat = 3
+let justCountdownTime: CGFloat = 3
 
-struct OverdriveView: View {
+struct JustCountdownView: View {
     @EnvironmentObject var viewRouter: ViewRouter
     @State private var isActive = false
-    @State private var timeRemaining: CGFloat = overdriveTime
+    @State private var timeRemaining: CGFloat = justCountdownTime
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     func stopTimerAndGoToStartFocusTimerPage() {
         isActive = false
-        timeRemaining = overdriveTime
+        timeRemaining = justCountdownTime
         viewRouter.currentPage = .startFocusTimer
     }
     
     var body: some View {
         VStack {
-            Text("Overdrive").padding()
+            Text("Just Countdown").padding()
             
             let minutes = Int(timeRemaining) / 60 % 60
             let seconds = Int(timeRemaining) % 60
@@ -55,8 +55,8 @@ struct OverdriveView: View {
     }
 }
 
-struct OverdriveView_Previews: PreviewProvider {
+struct JustCountdownView_Previews: PreviewProvider {
     static var previews: some View {
-        OverdriveView().environmentObject(ViewRouter())
+        JustCountdownView()
     }
 }
