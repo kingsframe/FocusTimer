@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let justCountdownTime: CGFloat = 3
+let justCountdownTime: CGFloat = 3600
 
 struct JustCountdownView: View {
     @EnvironmentObject var viewRouter: ViewRouter
@@ -26,9 +26,10 @@ struct JustCountdownView: View {
         VStack {
             Text("Just Countdown").padding()
             
+            let hours = Int(timeRemaining) / 3600
             let minutes = Int(timeRemaining) / 60 % 60
             let seconds = Int(timeRemaining) % 60
-            Text("\(String(format:"%02i:%02i", minutes, seconds))").font(.largeTitle)
+            Text("\(String(format:"%02i:%02i:%02i", hours, minutes, seconds))").font(.largeTitle)
             
             HStack {
                 Button(action: {
