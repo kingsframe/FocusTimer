@@ -34,7 +34,7 @@ struct FullrampView: View {
                 Button(action: {
                     isActive.toggle()
                 }, label: {
-                    Text("\(isActive ? "Pause" : "Play")")
+                    Text("\(isActive ? "Pause" : "Go")")
                 })
                 
                 Button(action: {
