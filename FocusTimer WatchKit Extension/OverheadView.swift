@@ -14,6 +14,7 @@ struct OverheadView: View {
     @EnvironmentObject var viewRouter: ViewRouter
     @State private var isActive = false
     @State private var timeRemaining: CGFloat = overheadTime
+    @State private var countdownToDate: Date?
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -34,6 +35,8 @@ struct OverheadView: View {
             HStack {
                 Button(action: {
                     isActive.toggle()
+                    //Add Overhead time to current date
+                    countdownToDate = Date().addingTimeInterval(TimeInterval(overheadTime))
                 }, label: {
                     Text("\(isActive ? "Pause" : "Go")")
                 })
@@ -46,9 +49,11 @@ struct OverheadView: View {
             }
         }.onReceive(timer, perform: { _ in
             guard isActive else { return }
-            if timeRemaining > 0 {
-                timeRemaining -= 1
-            } else {
+            
+            //Get difference between future time and current time
+            timeRemaining = CGFloat(countdownToDate!.timeIntervalSince(Date()))
+
+            if timeRemaining <= 0 {
                 WKInterfaceDevice.current().play(.stop)
                 stopTimerAndGoToWarmupPage()
             }
