@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import HealthKit
 
 let overheadTime: CGFloat = 3*60
 
@@ -15,6 +16,27 @@ struct OverheadView: View {
     @State private var isActive = false
     @State private var timeRemaining: CGFloat = overheadTime
     @State private var countdownToDate: Date?
+    
+    @State private var healthStore = HKHealthStore()
+    @State private var session: HKWorkoutSession!
+    @State private var builder: HKLiveWorkoutBuilder!
+    
+    @State private var typesToShare: Set = [
+        HKQuantityType.workoutType()
+    ]
+    
+    @State private var typesToRead: Set = [
+        HKQuantityType.quantityType(forIdentifier: .appleExerciseTime)!
+    ]
+    
+    // Provide the workout configuration.
+    func workoutConfiguration() -> HKWorkoutConfiguration {
+        let configuration = HKWorkoutConfiguration()
+        configuration.activityType = .running
+        configuration.locationType = .outdoor
+        
+        return configuration
+    }
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -34,6 +56,21 @@ struct OverheadView: View {
             
             HStack {
                 Button(action: {
+                    // Request authorization for those quantity types.
+                    healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { (success, error) in
+                        // Handle errors here.
+                    }
+                    
+                    do {
+                        session = try HKWorkoutSession(healthStore: healthStore, configuration: workoutConfiguration())
+                        builder = session.associatedWorkoutBuilder()
+                    } catch {
+                        // Handle failure here.
+                        return
+                    }
+                    
+                    session.startActivity(with: Date())
+                    
                     isActive.toggle()
                     //Add Overhead time to current date
                     countdownToDate = Date().addingTimeInterval(TimeInterval(overheadTime))

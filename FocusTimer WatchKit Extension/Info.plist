@@ -32,6 +32,10 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
 	</dict>
+	<key>NSHealthShareUsageDescription</key>
+	<string>FocusTimer is forced to use healthkit!</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>FocusTimer is forced to use healthkit!</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>

@@ -26,6 +26,7 @@
 		BCBAB9C6259FA38800760A49 /* FullrampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBAB9C5259FA38800760A49 /* FullrampView.swift */; };
 		BCBAB9CB259FA39600760A49 /* OverdriveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBAB9CA259FA39600760A49 /* OverdriveView.swift */; };
 		BCBAB9D025A78D9C00760A49 /* JustCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBAB9CF25A78D9C00760A49 /* JustCountdownView.swift */; };
+		BCF06D6925C0ACA5002FE9AC /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF06D6825C0ACA5002FE9AC /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,8 @@
 		BCBAB9C5259FA38800760A49 /* FullrampView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullrampView.swift; sourceTree = "<group>"; };
 		BCBAB9CA259FA39600760A49 /* OverdriveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverdriveView.swift; sourceTree = "<group>"; };
 		BCBAB9CF25A78D9C00760A49 /* JustCountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustCountdownView.swift; sourceTree = "<group>"; };
+		BCF06D6625C0ACA5002FE9AC /* FocusTimer WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FocusTimer WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		BCF06D6825C0ACA5002FE9AC /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF06D6925C0ACA5002FE9AC /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +117,7 @@
 				BC8A2514259BCB7200E34C0F /* FocusTimer WatchKit App */,
 				BC8A2520259BCB7300E34C0F /* FocusTimer WatchKit Extension */,
 				BC8A250D259BCB7200E34C0F /* Products */,
+				BCF06D6725C0ACA5002FE9AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +143,7 @@
 		BC8A2520259BCB7300E34C0F /* FocusTimer WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				BCF06D6625C0ACA5002FE9AC /* FocusTimer WatchKit Extension.entitlements */,
 				BC8A2521259BCB7300E34C0F /* FocusTimerApp.swift */,
 				BCBAB9B8259F912F00760A49 /* MotherView.swift */,
 				BCBAB9CF25A78D9C00760A49 /* JustCountdownView.swift */,
@@ -166,6 +172,14 @@
 				BC8A252E259BCB7400E34C0F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BCF06D6725C0ACA5002FE9AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCF06D6825C0ACA5002FE9AC /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,6 +461,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "FocusTimer WatchKit Extension/FocusTimer WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FocusTimer WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = Y6A8S5B48V;
@@ -471,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "FocusTimer WatchKit Extension/FocusTimer WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FocusTimer WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = Y6A8S5B48V;
